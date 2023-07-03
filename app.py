@@ -31,6 +31,8 @@ def upload_file():
     output = calculate_marks(pdf_path,q_from=q_from,q_to=q_to,a_from=a_from,a_to=a_to)
 
     return render_template('output.html', marks = output)
+
+
 # Run the application if the script is executed directly
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
